@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding: 15px 30px;
+}
+.logo {
+  float: left;
+  padding: 20px;
+  font-size: 28px;
+}
+.heading-1 {
+  font-size: 3rem;
+}
+
+.nav-items {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.nav-items li {
+  display: inline-block;
+}
+
+.btn {
+  float: right;
+  padding: 15px 20px;
+  margin-top: 25px;
+  background-color: rgb(169, 210, 249);
+  color: rgb(87, 149, 215);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+li {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.box1 {
+  width: 40vw;
+  vertical-align: middle;
+}
+.box2 {
+  /* width:40vw; */
+  vertical-align: middle;
+
+  text-align: center;
+}
+.text-section {
+  width: 30vw;
+}
+
+.heading-2 {
+  color: rgb(65, 157, 244);
+  margin-top: 12px;
+}
+.box1 p {
+  width: 100%;
+  font-size: 17px;
+  text-align: left;
+  margin-top: 10px;
+}
+.navbar {
+  text-align: center;
+}
+
+.btn2 {
+  padding: 22px 35px;
+  margin-top: 35px;
+  border-radius: 15px;
+  background-color: rgb(81, 170, 253);
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+.image {
+  width: 27vw;
+  display: inline;
+}
+.box {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #878a8a;
+}
+
+.container-2 {
+  margin: 6rem 6rem;
+}
