@@ -6,8 +6,10 @@
 }
 
 .container {
-  padding: 15px 30px;
+  padding: 18px 40px;
+  height: 100vh;
 }
+
 .logo {
   float: left;
   padding: 20px;
@@ -45,27 +47,30 @@ li {
   vertical-align: middle;
 }
 .box2 {
-  /* width:40vw; */
+  width:40vw;
   vertical-align: middle;
 
   text-align: center;
 }
 .text-section {
-  width: 30vw;
+  width:30vw;
 }
 
 .heading-2 {
   color: rgb(65, 157, 244);
   margin-top: 12px;
+   font-size: 3rem;
 }
 .box1 p {
-  width: 100%;
-  font-size: 17px;
+  width:30vw;
+  font-size: 19px;
   text-align: left;
   margin-top: 10px;
+  color: #878a8a;
 }
 .navbar {
   text-align: center;
+  /* display: inline-block; */
 }
 
 .btn2 {
@@ -78,7 +83,7 @@ li {
   font-size: 15px;
 }
 .image {
-  width: 27vw;
+  width: 33vw;
   display: inline;
 }
 .box {
@@ -92,4 +97,132 @@ a {
 
 .container-2 {
   margin: 6rem 6rem;
+}
+
+/* for making responsive */
+
+/* for tablet */
+@media  (max-width:768px) {
+  .container{
+    padding: 2px 10px;
+  }
+  .container-2{
+    margin:45px 8px;
+    display:flex;
+  }
+  .heading-1{
+    font-size: 2rem;
+  }
+  .heading-2{
+    font-size: 2rem;
+    margin-top:4px;
+  }
+  .text-section{
+    width:42vw;
+  }
+  .box1 p{
+    width:40vw;
+    text-align:left;
+    color: #878a8a;
+    font-size: 18px;
+  }
+  .image{
+    width: 45vw;
+  }
+  .imagbox{
+display: flex;
+justify-content: center;
+  }
+  .logo {
+  float: left;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+  .nav-items li {
+  display: inline-block;
+  font-size: 14px;
+}
+.btn {
+  float: right;
+  padding: 9px 12px;
+  margin-top: 25px;
+  
+  
+}
+.btn2 {
+  padding: 18px 30px;
+  margin-top: 33px;
+  border-radius: 15px;
+  background-color: rgb(81, 170, 253);
+  border: none;
+  color: white;
+  font-size: 13px;
+}
+}
+/* for mobile */
+@media (max-width:640px) {
+   .container{
+    padding: 2px 8px;
+  }
+  .container-2{
+    margin:86px 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .box1{
+    width: 100%;
+  }
+  .nav-items{
+    display:none;
+  }
+  .heading-1{
+    font-size: 2rem;
+  }
+  .heading-2{
+    margin-top: 1px;
+    font-size: 2rem;
+  }
+  .text-section{
+    width:79vw;
+  }
+  .box1 p{
+    text-align:left;
+    width: 93vw;
+    font-size: 14px;
+    color: #878a8a;
+  }
+  .image{
+    width:78vw;
+  }
+  .imagbox{
+display: flex;
+justify-content: center;
+  }
+  .logo {
+  float: left;
+  padding:15px;
+  font-size: 22px;
+  font-weight: 500;
+}
+  .nav-items li {
+  display: inline-block;
+  font-size: 14px;
+}
+.btn {
+  float: right;
+  padding: 9px 12px;
+  margin-top: 11px;
+  
+  
+}
+.btn2 {
+  padding: 18px 30px;
+  margin-top:28px;
+  border-radius: 15px;
+  background-color: rgb(81, 170, 253);
+  border: none;
+  color: white;
+  font-size: 13px;
+}
 }
