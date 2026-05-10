@@ -6,8 +6,9 @@
 }
 
 .container {
-  padding: 18px 40px;
+  padding: 14px 40px;
   height: 100vh;
+  position: relative;
 }
 
 .logo {
@@ -47,22 +48,22 @@ li {
   vertical-align: middle;
 }
 .box2 {
-  width:40vw;
+  width: 40vw;
   vertical-align: middle;
 
   text-align: center;
 }
 .text-section {
-  width:30vw;
+  width: 30vw;
 }
 
 .heading-2 {
   color: rgb(65, 157, 244);
   margin-top: 12px;
-   font-size: 3rem;
+  font-size: 3rem;
 }
 .box1 p {
-  width:30vw;
+  width: 30vw;
   font-size: 19px;
   text-align: left;
   margin-top: 10px;
@@ -70,7 +71,10 @@ li {
 }
 .navbar {
   text-align: center;
-  /* display: inline-block; */
+  position: relative;
+  display: flex;
+  justify-content:space-between ;
+ 
 }
 
 .btn2 {
@@ -81,6 +85,12 @@ li {
   border: none;
   color: white;
   font-size: 15px;
+}
+/* adding transform */
+.btn2:hover {
+  transform: scale(1.2, 1.2) skew(2deg, -3deg);
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
 }
 .image {
   width: 33vw;
@@ -98,131 +108,196 @@ a {
 .container-2 {
   margin: 6rem 6rem;
 }
-
+.hamburg-img {
+  /* width:0; */
+  display: none;
+}
+.menu-list {
+  width:12rem;
+  height:118vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display:none;
+  
+}
+.btn-hamburg {
+  display: none;
+}
 /* for making responsive */
 
 /* for tablet */
-@media  (max-width:768px) {
-  .container{
+@media (max-width: 768px) {
+  .container {
     padding: 2px 10px;
   }
-  .container-2{
-    margin:45px 8px;
-    display:flex;
+  .container-2 {
+    margin: 45px 8px;
+    display: flex;
   }
-  .heading-1{
+  .heading-1 {
     font-size: 2rem;
   }
-  .heading-2{
+  .heading-2 {
     font-size: 2rem;
-    margin-top:4px;
+    margin-top: 4px;
   }
-  .text-section{
-    width:42vw;
+  .text-section {
+    width: 42vw;
   }
-  .box1 p{
-    width:40vw;
-    text-align:left;
+  .box1 p {
+    width: 40vw;
+    text-align: left;
     color: #878a8a;
     font-size: 18px;
   }
-  .image{
+  .image {
     width: 45vw;
   }
-  .imagbox{
-display: flex;
-justify-content: center;
+  .imagbox {
+    display: flex;
+    justify-content: center;
   }
   .logo {
-  float: left;
-  padding: 20px;
-  font-size: 22px;
-  font-weight: 500;
-}
+    float: left;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+  }
   .nav-items li {
-  display: inline-block;
-  font-size: 14px;
-}
-.btn {
-  float: right;
-  padding: 9px 12px;
-  margin-top: 25px;
-  
-  
-}
-.btn2 {
-  padding: 18px 30px;
-  margin-top: 33px;
-  border-radius: 15px;
-  background-color: rgb(81, 170, 253);
-  border: none;
-  color: white;
-  font-size: 13px;
-}
+    display: inline-block;
+    font-size: 14px;
+  }
+  .btn {
+    float: right;
+    padding: 9px 12px;
+    margin-top: 25px;
+  }
+  .btn2 {
+    padding: 18px 30px;
+    margin-top: 33px;
+    border-radius: 15px;
+    background-color: rgb(81, 170, 253);
+    border: none;
+    color: white;
+    font-size: 13px;
+  }
+  .btn-hamburg {
+    display: none;
+  }
 }
 /* for mobile */
-@media (max-width:640px) {
-   .container{
-    padding: 2px 8px;
+@media (max-width: 640px) {
+  .container {
+    /* padding: 2px 8px; */
+    position: relative;
   }
-  .container-2{
-    margin:86px 8px;
+  .container-2 {
+    margin: 86px 8px;
     display: flex;
     flex-direction: column;
   }
-  .box1{
+  .box1 {
     width: 100%;
   }
-  .nav-items{
-    display:none;
+  .nav-items {
+    display: none;
   }
-  .heading-1{
+  .heading-1 {
     font-size: 2rem;
   }
-  .heading-2{
+  .heading-2 {
     margin-top: 1px;
     font-size: 2rem;
   }
-  .text-section{
-    width:79vw;
+  .text-section {
+    width: 79vw;
   }
-  .box1 p{
-    text-align:left;
+  .box1 p {
+    text-align: left;
     width: 93vw;
     font-size: 14px;
     color: #878a8a;
   }
-  .image{
-    width:78vw;
+  .image {
+    width: 78vw;
   }
-  .imagbox{
-display: flex;
-justify-content: center;
+  .imagbox {
+    display: flex;
+    justify-content: center;
   }
   .logo {
-  float: left;
-  padding:15px;
-  font-size: 22px;
-  font-weight: 500;
-}
+    float: left;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 500;
+  }
   .nav-items li {
-  display: inline-block;
-  font-size: 14px;
-}
-.btn {
-  float: right;
-  padding: 9px 12px;
-  margin-top: 11px;
+    display: inline-block;
+    font-size: 14px;
+  }
+  .btn {
+    padding: 5px 12px;
+    margin-top: 11px;
+  }
+  .btn2 {
+    padding: 18px 30px;
+    margin-top: 28px;
+    border-radius: 15px;
+    background-color: rgb(81, 170, 253);
+    border: none;
+    color: white;
+    font-size: 13px;
+  }
+  .hamburg-img {
+    width: 2rem;
+    padding: 4px;
+    float: right;
+    margin-left: 1.5rem;
+    margin-top: 9px;
+    display: block;
+  }
   
+  .side-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+     padding: 12px;
   
-}
-.btn2 {
-  padding: 18px 30px;
-  margin-top:28px;
-  border-radius: 15px;
-  background-color: rgb(81, 170, 253);
-  border: none;
+  }
+ .side-nav a{
   color: white;
-  font-size: 13px;
-}
+ 
+ }
+ .side-nav li{
+  padding:5px;
+  cursor: pointer;
+ 
+ }
+  .btn-hamburg {
+    width: 2rem;
+    padding: 4px;
+    float: right;
+    margin-top: 9px;
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+
+  .navbar:focus-within .menu-list {
+    display: flex; /* Show navigation */
+    transition: all 0.1s ease;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .right-content{
+    display: flex;
+  }
 }
