@@ -5,7 +5,13 @@
 3.In navbar have logo,navlinks,button.this used float,display property.<br>
 4.<b>hero section</b> divided into two parts "text section"and "image section".<br>
 this made by using float and display property.
-### task-7<br>
+## task-7<br>
   - Made laundry home page Responsive using "@media query".<br>
       - Tablet view "max-width:768"
       - Mobile view "max-width:640"
+## task-8 Hamburg menu in mobile view
+  - Made Hamburg menu for mobile
+      - added pseudo classes and elemetns in this project ".navbar:focus-within .menu-list "
+### Run readme.md file using right + click and copy the path and paste on browser.
+   
+        
