@@ -15,5 +15,9 @@ this made by using float and display property.
 # Task-9  Transform property in button 2
   - Added " transform: scale(1.2, 1.2) skew(2deg, -3deg); ,
   transition: all 0.6s ease-in-out;
+
+# Task-10 Add animation in image
+   - added animation orit using @keyframe from 0 to 100  (0%,25%,50%,100%)
+       - given tranform:translate()
 ### Run readme.md file using right + click and copy the path and paste on browser.##  
         
